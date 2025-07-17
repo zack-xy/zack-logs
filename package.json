@@ -1,0 +1,45 @@
+{
+  "name": "@zack-xy/logs",
+  "version": "0.0.1",
+  "description": "CLI tool that prints zack-xy banner",
+  "bin": {
+    "zxylogs": "./bin/index.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "start": "pnpm build && node bin/index.js",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zack-xy/zack-logs.git"
+  },
+  "keywords": [],
+  "author": "zack-xy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zack-xy/zack-logs/issues"
+  },
+  "homepage": "https://github.com/zack-xy/zack-logs#readme",
+  "devDependencies": {
+    "@eslint/css": "^0.10.0",
+    "@eslint/js": "^9.31.0",
+    "@eslint/json": "^0.13.0",
+    "@eslint/markdown": "^7.0.0",
+    "@types/figlet": "^1.7.0",
+    "@types/node": "^24.0.14",
+    "eslint": "^9.31.0",
+    "globals": "^16.3.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.37.0"
+  },
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.4.1",
+    "figlet": "^1.8.2",
+    "gradient-string": "^3.0.0"
+  }
+}
